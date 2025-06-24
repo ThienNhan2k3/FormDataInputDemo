@@ -1,4 +1,4 @@
-
+import UserIcon from '@/assets/user_icon_2.png'
 
 export default function Sidebar() {
     return (
@@ -9,7 +9,7 @@ export default function Sidebar() {
             </div>
             <div className="flex items-center space-x-3 p-3 bg-teal-800">
               <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <img src="/public/user_icon_2.png" alt="logo" className="w-full h-full object-cover" />
+                <img src={UserIcon} alt="logo" className="w-full h-full object-cover" />
               </div>
               <div className="text-sm font-medium text-white">Quản lý người dùng</div>
             </div>

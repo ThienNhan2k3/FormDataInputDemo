@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -8,16 +8,23 @@ import { Checkbox } from "@/components/ui/checkbox"
 import type { Control } from "react-hook-form"
 import type { FormData } from "@/lib/schema"
 import { FormField, FormItem, FormControl, FormMessage } from "@/components/ui/form"
+import { useState } from "react"
 
 interface DocumentInformationProps {
   control: Control<FormData>
 }
 
 export function DocumentInformation({ control }: DocumentInformationProps) {
+  const [isOpen, setIsOpen] = useState(true)
+
   return (
-    <Collapsible defaultOpen>
+    <Collapsible defaultOpen onOpenChange={setIsOpen}>
       <CollapsibleTrigger className="bg-gray-100 flex items-center space-x-2 text-sm font-medium w-full rounded-none border-none outline-none focus:outline-none py-4">
-        <ChevronDown className="w-4 h-4" />
+        {isOpen ? (
+          <ChevronDown className="w-4 h-4" />
+        ) : (
+          <ChevronRight className="w-4 h-4" />
+        )}
         <span>Thông tin chứng thực</span>
       </CollapsibleTrigger>
       <CollapsibleContent className="mt-4 space-y-4">
@@ -63,7 +70,7 @@ export function DocumentInformation({ control }: DocumentInformationProps) {
                     <Input 
                       id="documentDate" 
                       type="date" 
-                      className="w-52 justify-between"
+                      className="w-fit justify-between"
                       {...field}
                       value={field.value ? new Date(field.value).toISOString().split('T')[0] : ''}
                       onChange={(e) => field.onChange(new Date(e.target.value))}

@@ -114,6 +114,7 @@ export default function App() {
                         id="document-type" 
                         placeholder="Mã số thuế" 
                         className="w-52"
+                        disabled={true}
                         {...form.register("documentType")}
                       />
                     </div>
