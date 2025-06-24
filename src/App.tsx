@@ -13,7 +13,6 @@ import { NotificationRecipient } from "@/components/form-sections/NotificationRe
 import { AuthorityInformation } from "@/components/form-sections/AuthorityInformation"
 import { ContractorInformation } from "@/components/form-sections/ContractorInformation"
 import { OtherInformation } from "@/components/form-sections/OtherInformation"
-import { CharterCapital } from "@/components/form-sections/CharterCapital"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { formSchema } from "@/lib/schema"
@@ -96,9 +95,9 @@ export default function App() {
   return (
     <div className="flex w-full">
       <Sidebar />
-      <div className="min-h-screen bg-gray-100 w-4/5 flex flex-col justify-between">
+      <div className="min-h-screen bg-slate-50 w-4/5 flex flex-col justify-between">
         <Header />
-        <div className="flex justify-center">
+        <div className="flex justify-center relative">
           <main className="flex-1 p-4 bg-transparent max-w-3xl">
             <StatusCard />
 
@@ -110,7 +109,7 @@ export default function App() {
                   </CardHeader>
                   <CardContent className="p-0">
                     <div className="flex justify-start items-center gap-4 px-4 pb-4">
-                      <Label htmlFor="document-type" className="w-40">Loại chứng thực</Label>
+                      <Label htmlFor="document-type" className="w-40 p-3">Loại chứng thực</Label>
                       <Input 
                         id="document-type" 
                         placeholder="Mã số thuế" 
@@ -121,7 +120,6 @@ export default function App() {
 
                     <DocumentInformation control={form.control} />
                     <GeneralInformation control={form.control} />
-                    <CharterCapital control={form.control} />
                     <OfficeAddress control={form.control} />
                     <LegalRepresentative control={form.control} />
                     <NotificationRecipient control={form.control} />
@@ -131,7 +129,7 @@ export default function App() {
                   </CardContent>
                 </Card>
 
-                <div className="flex justify-between items-center bg-white px-4 py-3 fixed bottom-0 left-0 right-0">
+                <div className="flex justify-between items-center bg-white px-8 py-3 absolute bottom-0 left-0 right-0">
                   <Button type="button" variant="outline">Quay lại</Button>
                   <Button type="submit" className="bg-teal-800 text-white">Lưu lại</Button>
                 </div>

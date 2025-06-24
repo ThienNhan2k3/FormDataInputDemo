@@ -22,20 +22,20 @@ export default function Header() {
     <header className="flex items-center justify-between px-6 py-3 bg-white border-b border-gray-200">
       {/* Left Navigation */}
       <nav className="flex items-center space-x-6">
-        <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-900">
+        <a href="#" className="text-sm font-medium text-teal-800 hover:text-teal-900">
           Trang chủ
         </a>
-        <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-900">
+        <a href="#" className="text-sm font-medium text-teal-800 hover:text-teal-900">
           Bài viết
         </a>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="text-sm font-medium text-gray-700 hover:text-gray-900 p-0 h-auto">
+            <div className="flex items-center text-sm font-medium text-teal-800 hover:text-teal-900 p-0 h-auto">
               Phân hệ nghiệp vụ
               <ChevronDown className="ml-1 h-4 w-4" />
-            </Button>
+            </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="start">
+          <DropdownMenuContent align="start" className="bg-white">
             <DropdownMenuItem>Quản lý người dùng</DropdownMenuItem>
             <DropdownMenuItem>Quản lý sản phẩm</DropdownMenuItem>
             <DropdownMenuItem>Báo cáo</DropdownMenuItem>

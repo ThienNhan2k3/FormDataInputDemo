@@ -1,15 +1,15 @@
-import { User } from "lucide-react";
+
 
 export default function Sidebar() {
     return (
         <aside className="w-1/5 bg-white shadow-sm min-h-screen border-r shrink-0 z-50">
-          <div className="py-4">
+          <div>
             <div className="flex items-center space-x-2 bg-cyan-500 h-16 justify-center">
               <span className="font-bold text-xl text-white">VNEPS</span>
             </div>
             <div className="flex items-center space-x-3 p-3 bg-teal-800">
               <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <User className="w-4 h-4 text-white" />
+                <img src="/public/user_icon_2.png" alt="logo" className="w-full h-full object-cover" />
               </div>
               <div className="text-sm font-medium text-white">Quản lý người dùng</div>
             </div>
@@ -18,7 +18,7 @@ export default function Sidebar() {
                 href="#"
                 className="flex items-center space-x-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded text-sm"
               >
-                <span>Quản lý hoạt động trong giai</span>
+                <span>Quản lý hoạt động tham gia</span>
               </a>
             </nav>
           </div>
