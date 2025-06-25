@@ -49,7 +49,7 @@ export function DocumentInformation({ control }: DocumentInformationProps) {
               )}
             />
             <div className="flex items-center gap-x-2">
-              <Checkbox id="confirm" className="border-teal-800 border-2 text-teal-800 focus:ring-teal-800 grow-0 p-0 outline-none focus:outline-none"/>
+              <Checkbox id="confirm" className="border-teal-800 border-2 text-teal-800 focus:ring-teal-800 grow-0 p-0 outline-none focus:outline-none &_path:text-teal-800"/>
               <Label htmlFor="confirm" className="text-sm">
                 Đơn vị đã xác nhận tính hợp lệ của chứng thư gốc và chịu trách nhiệm về tính chính xác của nội
                 dung

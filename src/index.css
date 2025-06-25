@@ -76,4 +76,9 @@ button:focus-visible {
   width: 100vw;
 }
 
+* {
+  color: black;
+  background-color: transparent;
+}
+
 

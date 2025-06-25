@@ -129,7 +129,7 @@ export default function App() {
                 </Card>
 
                 <div className="flex justify-between items-center bg-white px-8 py-3 absolute bottom-0 left-0 right-0">
-                  <Button type="button" variant="outline">Quay lại</Button>
+                  <Button type="button" variant="outline" className="bg-white text-black border-border-input">Quay lại</Button>
                   <Button type="submit" className="bg-teal-800 text-white">Lưu lại</Button>
                 </div>
               </form>

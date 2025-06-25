@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Adjust if your source files are in a different directory or have different extensions
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "border-input": "#e5e7eb",
+      }
+    },
   },
   plugins: [],
 };
