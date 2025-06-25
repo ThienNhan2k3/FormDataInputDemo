@@ -25,7 +25,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
         )}
         <span>Địa chỉ trụ sở</span>
       </CollapsibleTrigger>
-      <CollapsibleContent className="mt-4 space-y-4 px-4 py-8">
+      <CollapsibleContent className="mt-4 space-y-4 px-4 py-4">
         <div className="flex justify-start items-center gap-4">
           <Label htmlFor="address" className="w-40">Địa chỉ</Label>
           <FormField
@@ -47,7 +47,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
           />
         </div>
 
-        <div className="flex justify-start items-center gap-4">
+        {/* <div className="flex justify-start items-center gap-4">
           <Label htmlFor="province" className="w-40">Tỉnh/Thành phố</Label>
           <FormField
             control={control}
@@ -87,7 +87,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
                   >
-                    <SelectTrigger className="w-full">
+                    <SelectTrigger className="w-full" id="district">
                       <SelectValue placeholder="Chọn quận/huyện"/>
                     </SelectTrigger>
                     <SelectContent className="bg-white">
@@ -115,7 +115,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
                   >
-                    <SelectTrigger className="w-full">
+                    <SelectTrigger className="w-full" id="ward">
                       <SelectValue placeholder="Chọn phường/xã"/>
                     </SelectTrigger>
                     <SelectContent className="bg-white">
@@ -171,7 +171,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
               </FormItem>
             )}
           />
-        </div>
+        </div> */}
       </CollapsibleContent>
     </Collapsible>
   )

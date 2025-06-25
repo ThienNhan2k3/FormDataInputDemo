@@ -107,6 +107,7 @@ export function LegalRepresentative({ control }: LegalRepresentativeProps) {
                   <Input 
                     id="birthDate" 
                     type="date" 
+                    className="w-fit"
                     {...field}
                     value={field.value ? new Date(field.value).toISOString().split('T')[0] : ''}
                     onChange={(e) => field.onChange(new Date(e.target.value))}
@@ -170,7 +171,7 @@ export function LegalRepresentative({ control }: LegalRepresentativeProps) {
                     onValueChange={field.onChange}
                     value={field.value}
                   >
-                    <SelectTrigger>
+                    <SelectTrigger id="idType">
                       <SelectValue placeholder="Chọn loại giấy tờ"/>
                     </SelectTrigger>
                     <SelectContent className="bg-white">
@@ -218,6 +219,7 @@ export function LegalRepresentative({ control }: LegalRepresentativeProps) {
                     id="idIssueDate" 
                     type="date" 
                     {...field}
+                    className="w-fit"
                     value={field.value ? new Date(field.value).toISOString().split('T')[0] : ''}
                     onChange={(e) => field.onChange(new Date(e.target.value))}
                   />

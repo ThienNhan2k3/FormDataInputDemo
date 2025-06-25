@@ -78,13 +78,13 @@ export function GeneralInformation({ control }: GeneralInformationProps) {
                     onValueChange={field.onChange}
                     value={field.value}
                   >
-                    <SelectTrigger className="w-full">
+                    <SelectTrigger className="w-full" id="legal-type">
                       <SelectValue placeholder="Chọn loại hình pháp lý"/>
                     </SelectTrigger>
                     <SelectContent className="bg-white">
-                      <SelectItem value="cp">Công ty cổ phần</SelectItem>
-                      <SelectItem value="tnhh">Công ty TNHH</SelectItem>
-                      <SelectItem value="hd">Công ty hợp danh</SelectItem>
+                      <SelectItem value="Công ty Cổ phần">Công ty cổ phần</SelectItem>
+                      <SelectItem value="Công ty TNHH">Công ty TNHH</SelectItem>
+                      <SelectItem value="Công ty hợp danh">Công ty hợp danh</SelectItem>
                     </SelectContent>
                   </Select>
                 </FormControl>
@@ -109,12 +109,12 @@ export function GeneralInformation({ control }: GeneralInformationProps) {
                     className="flex items-center gap-x-4"
                   >
                     <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="yes" id="yes" className="border-teal-800 text-teal-800 focus:ring-teal-800 grow-0 p-0" />
-                      <Label htmlFor="yes" className={field.value === "yes" ? "text-teal-800 font-medium" : ""}>Có</Label>
+                      <RadioGroupItem value="yes" id="has-branch" className="border-teal-800 text-teal-800 focus:ring-teal-800 grow-0 p-0" />
+                      <Label htmlFor="has-branch" className={field.value === "yes" ? "text-teal-800 font-medium" : ""}>Có</Label>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="no" id="no" className="border-teal-800 text-teal-800 focus:ring-teal-800 grow-0 p-0" />
-                      <Label htmlFor="no" className={field.value === "no" ? "text-teal-800 font-medium" : ""}>Không</Label>
+                      <RadioGroupItem value="no" id="no-branch" className="border-teal-800 text-teal-800 focus:ring-teal-800 grow-0 p-0" />
+                      <Label htmlFor="no-branch" className={field.value === "no" ? "text-teal-800 font-medium" : ""}>Không</Label>
                     </div>
                   </RadioGroup>
                 </FormControl>
