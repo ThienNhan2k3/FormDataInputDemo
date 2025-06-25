@@ -90,8 +90,6 @@ export default function App() {
     // Handle form submission here
   }
 
-  console.log("form.getValues():::", form.getValues())
-
   return (
     <div className="flex w-full">
       <Sidebar />

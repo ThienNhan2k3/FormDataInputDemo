@@ -175,9 +175,9 @@ export function LegalRepresentative({ control }: LegalRepresentativeProps) {
                       <SelectValue placeholder="Chọn loại giấy tờ"/>
                     </SelectTrigger>
                     <SelectContent className="bg-white">
-                      <SelectItem value="cccd">Thẻ căn cước công dân</SelectItem>
-                      <SelectItem value="cmnd">Chứng minh nhân dân</SelectItem>
-                      <SelectItem value="passport">Hộ chiếu</SelectItem>
+                      <SelectItem value="CCCD">Thẻ căn cước công dân</SelectItem>
+                      <SelectItem value="CMND">Chứng minh nhân dân</SelectItem>
+                      <SelectItem value="PASSPORT">Hộ chiếu</SelectItem>
                     </SelectContent>
                   </Select>
                 </FormControl>
@@ -290,7 +290,7 @@ export function LegalRepresentative({ control }: LegalRepresentativeProps) {
           />
         </div>
 
-        <div className="flex justify-start items-center gap-4">
+        {/* <div className="flex justify-start items-center gap-4">
           <Label htmlFor="phone" className="w-40 shrink-0">Số điện thoại</Label>
           <FormField
             control={control}
@@ -328,7 +328,7 @@ export function LegalRepresentative({ control }: LegalRepresentativeProps) {
               </FormItem>
             )}
           />
-        </div>
+        </div> */}
       </CollapsibleContent>
     </Collapsible>
   )

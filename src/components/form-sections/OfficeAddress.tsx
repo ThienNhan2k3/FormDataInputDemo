@@ -25,7 +25,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
         )}
         <span>Địa chỉ trụ sở</span>
       </CollapsibleTrigger>
-      <CollapsibleContent className="mt-4 space-y-4 px-4 py-4">
+      <CollapsibleContent className="mt-4 space-y-4 px-4 pb-8 pt-4">
         <div className="flex justify-start items-center gap-4">
           <Label htmlFor="address" className="w-40">Địa chỉ</Label>
           <FormField
@@ -129,7 +129,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
               </FormItem>
             )}
           />
-        </div>
+        </div> */}
 
         <div className="flex justify-start items-center gap-4">
           <Label htmlFor="phoneNumber" className="w-40">Số điện thoại</Label>
@@ -171,7 +171,7 @@ export function OfficeAddress({ control }: OfficeAddressProps) {
               </FormItem>
             )}
           />
-        </div> */}
+        </div>
       </CollapsibleContent>
     </Collapsible>
   )

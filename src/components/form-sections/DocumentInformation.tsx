@@ -93,7 +93,7 @@ export function DocumentInformation({ control }: DocumentInformationProps) {
                       onValueChange={field.onChange} 
                       defaultValue={field.value}
                     >
-                      <SelectTrigger>
+                      <SelectTrigger id="documentPlace">
                         <SelectValue placeholder="Chọn quốc gia" className="w-36"/>
                       </SelectTrigger>
                       <SelectContent className="bg-white">

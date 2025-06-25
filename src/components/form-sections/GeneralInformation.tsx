@@ -82,9 +82,9 @@ export function GeneralInformation({ control }: GeneralInformationProps) {
                       <SelectValue placeholder="Chọn loại hình pháp lý"/>
                     </SelectTrigger>
                     <SelectContent className="bg-white">
-                      <SelectItem value="Công ty Cổ phần">Công ty cổ phần</SelectItem>
-                      <SelectItem value="Công ty TNHH">Công ty TNHH</SelectItem>
-                      <SelectItem value="Công ty hợp danh">Công ty hợp danh</SelectItem>
+                      <SelectItem value="JSC">Công ty cổ phần</SelectItem>
+                      <SelectItem value="LLC">Công ty TNHH</SelectItem>
+                      <SelectItem value="GP">Công ty hợp danh</SelectItem>
                     </SelectContent>
                   </Select>
                 </FormControl>
